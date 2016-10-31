@@ -1,4 +1,7 @@
 ﻿package ex;
+
+import java.util.Scanner;
+
 /*
  * Topic: 寫一函數 square(n,c)，以 c 字元，印出邊長為 n 之實心正方形。Ex：square(3,'@') 將印出如下形狀
  @@@
@@ -11,8 +14,22 @@
 public class ex01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	Scanner sca = new Scanner(System.in);
+	int n=sca.nextInt();
+	String ch=sca.next();
+	printImg(n,ch.charAt(0));
+	}
 
+	private static void printImg(int n, char ch) {
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				System.out.print(ch);
+			}	
+		System.out.println();
+		}
+	
 	}
 
 }
