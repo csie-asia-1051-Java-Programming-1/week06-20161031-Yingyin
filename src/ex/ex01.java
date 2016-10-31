@@ -17,10 +17,10 @@ public class ex01 {
 	Scanner sca = new Scanner(System.in);
 	int n=sca.nextInt();
 	String ch=sca.next();
-	printImg(n,ch.charAt(0));
+	square(n,ch.charAt(0));
 	}
 
-	private static void printImg(int n, char ch) {
+	private static void square(int n, char ch) {
 		for(int i=0;i<n;i++)
 		{
 			for(int j=0;j<n;j++)
